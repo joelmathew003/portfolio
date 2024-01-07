@@ -3,6 +3,8 @@ import Home from "./components/Home";
 import Socials from "./components/Socials";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Tech from "./components/Tech";
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       <Socials />
       <Home />
       <About />
+      <Tech />
       <Projects />
+      <Contact />
     </div>
   );
 }
