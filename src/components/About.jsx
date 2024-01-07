@@ -10,7 +10,7 @@ const About = () => {
           </h1>
         </div>
         <div>
-          <p className="mt-20 text-xl">
+          <p className="mt-20 text-xl text-gray-400">
             I'm a Computer Science graduate from IIT Palakkad. I enjoy
             problem-solving and like building stuff. I like crafting elegant
             solutions, and am fascinated by the beauty of meticulously written

@@ -7,9 +7,11 @@ const Socials = () => {
   const links = [
     {
       id: 1,
+      name: "Linkedin",
       child: (
         <>
-          LinkedIn <FaLinkedin size={20} />
+          <div className="px-4">LinkedIn</div>
+          <FaLinkedin size={20} />
         </>
       ),
       href: "http://www.linkedin.com",
@@ -17,18 +19,22 @@ const Socials = () => {
     },
     {
       id: 2,
+      name: "Github",
       child: (
         <>
-          Github <FaGithub size={20} />
+          <div className="px-4">Github</div>
+          <FaGithub size={20} />
         </>
       ),
       href: "http://www.github.com",
     },
     {
       id: 3,
+      name: "Email",
       child: (
         <>
-          Email <HiOutlineMail size={20} />
+          <div className="px-4">Email</div>
+          <HiOutlineMail size={20} />
         </>
       ),
       href: "mailto:joelsammathew@gmail.com",
@@ -38,7 +44,8 @@ const Socials = () => {
       id: 4,
       child: (
         <>
-          Resume <BsFillPersonLinesFill size={20} />
+          <div className="px-4">Resume</div>
+          <BsFillPersonLinesFill size={20} />
         </>
       ),
       href: "/resume.pdf",

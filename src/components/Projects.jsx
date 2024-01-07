@@ -55,17 +55,18 @@ const Projects = () => {
               <div className="flex md:flex-row flex-col justify-stretch">
                 <div className="md:w-2/3 py-6">
                   <div className="flex py-2">
-                    <h2 className="text-2xl">{project_name}</h2>
+                    <h2 className="text-2xl text-gray-200">{project_name}</h2>
                   </div>
                   <div className="w-full">
-                    <p>{project_desc}</p>
+                    <p className="text-gray-400">{project_desc}</p>
                   </div>
                 </div>
                 <div className="relative flex justify-center items-center md:w-1/3">
                   <div
                     className=""
                     onMouseEnter={() => setHovered(id)}
-                    onMouseLeave={() => setHovered(null)}>
+                    onMouseLeave={() => setHovered(null)}
+                    style={{ zIndex: 0 }}>
                     <a
                       href={github_link}
                       className="place-self-center relative">
