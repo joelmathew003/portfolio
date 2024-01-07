@@ -33,13 +33,13 @@ const Tech = () => {
     <div className="text-white h-full w-full md:px-40 px-10">
       <div className="flex flex-col p-4 justify-center w-full  lg mx-auto h-full">
         <div className="">
-          <p className="py-4 text-xl">I have tinkered with </p>
+          <p className="py-4 text-xl">I have tinkered with stuff </p>
         </div>
         <div>
           <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 md:px-12 sm:px-0">
             {techs.map(({ id, name, img_src }) => (
               <div className="flex justify-normal items-center p-2 rounded-md bg-slate-800">
-                <img className="h-12 pr-4 w-30" src={img_src}></img>
+                <img className="h-12 pr-4 w-30" src={img_src} alt=""></img>
                 <p>{name}</p>
               </div>
             ))}
