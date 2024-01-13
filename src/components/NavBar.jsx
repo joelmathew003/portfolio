@@ -12,7 +12,7 @@ const NavBar = () => {
     { id: 5, link: "contact" },
   ];
   return (
-    <div className="flex justify-between bg-black text-white fixed w-full h-20 items-center px-4">
+    <div className="flex justify-between bg-black text-white fixed w-full h-20 items-center px-4" style={{zIndex:100}}>
       <div className="font-signature text-5xl ml-2">JM</div>
 
       <ul className="hidden md:flex">
