@@ -14,7 +14,7 @@ const Socials = () => {
           <FaLinkedin size={20} />
         </>
       ),
-      href: "http://www.linkedin.com",
+      href: "https://www.linkedin.com/in/joel-mathew-3122751a6/",
       style: "rounded-tr-md",
     },
     {
@@ -26,7 +26,7 @@ const Socials = () => {
           <FaGithub size={20} />
         </>
       ),
-      href: "http://www.github.com",
+      href: "https://github.com/joelmathew003",
     },
     {
       id: 3,

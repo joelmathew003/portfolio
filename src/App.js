@@ -8,7 +8,7 @@ import Tech from "./components/Tech";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-black via-black to-gray-800 bg-fixed">
+    <div className="h-full bg-gradient-to-b from-black via-black to-gray-800 bg-fixed">
       <NavBar />
       <Socials />
       <Home />
