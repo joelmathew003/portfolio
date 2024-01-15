@@ -37,7 +37,7 @@ const Contact = () => {
               rows="10"
               className={form_style}></textarea>
             
-            <button className="text-black bg-slate-400 py-3 items-center hover:bg-slate-200 duration-100 text-xl text-bold rounded-md">
+            <button className="text-black bg-slate-400 py-3 items-center hover:bg-slate-200 duration-200 text-xl text-bold rounded-md">
               Send
             </button>
           </form>

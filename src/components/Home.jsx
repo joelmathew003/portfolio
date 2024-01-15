@@ -5,9 +5,13 @@ const Home = () => {
   return (
     <div name="home" className="h-screen w-full">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center md:justify-between h-full px-10 md:flex-row">
-        <div className="flex flex-col justify-center h-1/2">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">Hi, I'm Joel</h2>
-          <p className="text-gray-400 py-4 max-w-md text-xl">I like crafting code and shaping ideas</p>
+        <div className="flex flex-col justify-center h-1/2 gap-4">
+          <div className="flex">
+
+          <h2 className="text-4xl sm:text-7xl font-bold text-white intro-text pr-4">Hi, </h2>
+          <h2 className="text-4xl sm:text-7xl font-bold text-white intro-text-2">I'm Joel</h2>
+          </div>
+          <p className="text-gray-400 max-w-md text-xl typewriter-text">I like crafting code and shaping ideas</p>
         </div>
         <div className="">
           <img

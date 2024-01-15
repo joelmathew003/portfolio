@@ -117,7 +117,7 @@ const Projects = () => {
                     }`}
                   />
                   {hovered === id && (
-                    <div className="-mt-16 absolute inset-0 flex items-center justify-center hover:translate-y-9 transition duration-500 overflow-hidden">
+                    <div className="-mt-16 absolute inset-0 flex items-center justify-center hover:translate-y-9 transition duration-500 overflow-hidden delay-100">
                       <div className=" flex-col text-gray-400 px-10 gap-8">
                         <div className="flex items-center justify-between py-2">
                           <h1 className="text-xl">{project_name}</h1>
