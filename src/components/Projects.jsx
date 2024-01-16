@@ -42,57 +42,6 @@ const Projects = () => {
     },
   ];
   return (
-    // <div
-    //   name="projects"
-    //   className="h-full w-full text-white md:px-40 px-10 py-40 bg-transparent">
-    //   <div className="flex w-full flex-col justify-center p-4">
-    //     <div className="text-4xl font-bold ">
-    //       <h1 className="inline border-b-4 border-gray-500">Projects</h1>
-    //     </div>
-    //     <div className="flex flex-col w-full gap-8 mt-20">
-    //       {projects.map(
-    //         ({ id, project_name, project_desc, img_src, github_link }) => (
-    //           <div className="flex md:flex-row flex-col justify-stretch">
-    //             <div className="md:w-2/3 py-6">
-    //               <div className="flex py-2">
-    //                 <h2 className="text-2xl text-gray-200">{project_name}</h2>
-    //               </div>
-    //               <div className="w-full">
-    //                 <p className="text-gray-400">{project_desc}</p>
-    //               </div>
-    //             </div>
-    //             <div className="relative flex justify-center items-center md:w-1/3">
-    //               <div
-    //                 className=""
-    //                 onMouseEnter={() => setHovered(id)}
-    //                 onMouseLeave={() => setHovered(null)}
-    //                 style={{ zIndex: 0 }}>
-    //                 <a
-    //                   href={github_link}
-    //                   className="place-self-center relative">
-    //                   <img
-    //                     src={img_src}
-    //                     alt=""
-    //                     className={`h-28 rounded-md ${
-    //                       hovered === id
-    //                         ? "opacity-30 transition duration-300"
-    //                         : "opacity-100 transition duration-300"
-    //                     }`}
-    //                   />
-    //                   {hovered === id && (
-    //                     <div className="absolute inset-0 flex items-center justify-center transition duration-300">
-    //                       <FaGithub className="text-gray-500 text-7xl opacity-50" />
-    //                     </div>
-    //                   )}
-    //                 </a>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         )
-    //       )}
-    //     </div>
-    //   </div>
-    // </div>
     <div
       name="projects"
       className="h-full w-full text-white md:px-40 px-10 py-40 bg-transparent">

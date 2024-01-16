@@ -1,17 +1,32 @@
 import React from "react";
 import Dp from "../assets/dp.png";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
     <div name="home" className="h-screen w-full">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center md:justify-between h-full px-10 md:flex-row">
-        <div className="flex flex-col justify-center h-1/2 gap-4">
-          <div className="flex">
-
-          <h2 className="text-4xl sm:text-7xl font-bold text-white intro-text pr-4">Hi, </h2>
-          <h2 className="text-4xl sm:text-7xl font-bold text-white intro-text-2">I'm Joel</h2>
+        <div className="flex flex-col justify-center h-1/2 gap-4  text-white">
+          <div className="flex ">
+            <h2 className="text-4xl sm:text-7xl font-bold text-white intro-text pr-4">
+              Hi,{" "}
+            </h2>
+            <h2 className="text-4xl sm:text-7xl font-bold text-white intro-text-2">
+              I'm Joel
+            </h2>
           </div>
-          <p className="text-gray-400 max-w-md text-xl typewriter-text">I like crafting code and shaping ideas</p>
+          {/* <p className="text-gray-400 max-w-md text-xl typewriter-text">I like crafting code and shaping ideas</p> */}
+          <div className="typewriter-text text-gray-400 max-w-md text-xl delay-700 tracking-widest">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(1000)
+                  .changeDelay(35)
+                  .typeString("I like crafting code and shaping ideas")
+                  .start();
+              }}
+            />
+          </div>
         </div>
         <div className="">
           <img
