@@ -47,9 +47,9 @@ const Projects = () => {
       className="h-full w-full text-white md:px-40 px-10 py-40 bg-transparent">
       <div className="flex w-full flex-col justify-center p-4">
         <div className="text-4xl font-bold ">
-          <h1 className="inline border-b-4 border-gray-500">Projects</h1>
+          <h1 className="inline border-b-4 border-gray-500 font-heading">Projects</h1>
         </div>
-        <div className="grid sm:grid-cols-2 grid-cols-1 mt-20 gap-8 w-5/6">
+        <div className="grid sm:grid-cols-2 grid-cols-1 mt-20 gap-8 w-5/6 font-textBody">
           {projects.map(
             ({ id, project_name, project_desc, img_src, github_link }) => (
               <div
