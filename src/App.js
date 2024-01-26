@@ -12,8 +12,10 @@ function App() {
       <NavBar />
       <Socials />
       <Home />
-      <About />
-      {/* <Tech /> */}
+      <div className="md:flex">
+        <About />
+        <Tech />
+      </div>
       <Projects />
       <Contact />
     </div>

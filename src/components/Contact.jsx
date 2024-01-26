@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Contact = () => {
-  const [hovered, setHovered] = useState(null);
   const form_style =
     "p-2 bg-transparent border-b-2 text-white focus:outline-0 focus:border-blue-500 transition-all duration-300 border-gray-500";
   return (
@@ -14,11 +13,11 @@ const Contact = () => {
             Contact 
           </p>
           <p className="py-6 text-gray-400 font-textBody text-lg">
-            If you want to connect, drop me a message. I'd love to get in touch.
+            If you want to connect, drop me a message or email me at <a className="text-blue-500 hover:text-blue-300 duration-200" href="mailto:joelsammathew@gmail.com">joelsammathew@gmail.com</a>. I'd love to get in touch.
           </p>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center font-textBody">
           <form
             action="https://getform.io/f/48589f64-52ba-4696-b1c7-5515fa399584"
             method="POST"

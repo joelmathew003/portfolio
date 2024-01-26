@@ -47,7 +47,7 @@ const Socials = () => {
           <BsFillPersonLinesFill size={20} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "/Joel_Mathew_Resume_2024.pdf",
       style: "rounded-br-md",
       download: true,
     },
