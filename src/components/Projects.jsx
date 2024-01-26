@@ -16,6 +16,7 @@ const Projects = () => {
       mobile_desc: "Implemented important functionalities in the whiteboard module in lab session monitoring application",
       img_src: Plexshare,
       github_link: "https://github.com/joelmathew003/PlexShare",
+      tags: ["C#", ".NET", "OOPs"],
     },
     {
       id: 2,
@@ -25,6 +26,7 @@ const Projects = () => {
       mobile_desc: "A compiler for the Tiger Language written in Standard ML",
       img_src: Tiger,
       github_link: "https://github.com/joelmathew003/Tiger-Compiler",
+      tags: ["Standard ML", "MIPS", "Compilers"],
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ const Projects = () => {
       mobile_desc: "An audio sentiment analyser using LSTM with a web app interface",
       img_src: Sentiment,
       github_link: "https://github.com/joelmathew003/Sentiment-Analysis",
+      tags: ["Keras","Sequence models", "Python"],
     },
     {
       id: 4,
@@ -44,6 +47,7 @@ const Projects = () => {
         "Research oriented project exploring Android malware detection with GNN",
       img_src: Andro,
       github_link: "https://github.com/joelmathew003/Android-Malware-Detection",
+      tags: ["XAI", "GNN", "Research"],
     },
   ];
   return (
@@ -65,6 +69,7 @@ const Projects = () => {
               img_src,
               github_link,
               mobile_desc,
+              tags
             }) => (
               <div>
                 <div
@@ -89,6 +94,13 @@ const Projects = () => {
                           </div>
                           <div className="hidden xl:flex flex-col justify-between">
                             <p className="">{project_desc}</p>
+                          </div>
+                          <div className="flex gap-2 mt-5">
+                          {tags.map((tag) => (
+                            <div className="bg-slate-700 rounded-md p-1">
+                              {tag}
+                            </div>
+                          ))}
                           </div>
                         </div>
                       </div>
