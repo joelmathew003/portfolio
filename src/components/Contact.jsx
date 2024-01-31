@@ -13,7 +13,7 @@ const Contact = () => {
             Contact 
           </p>
           <p className="py-6 text-gray-400 font-textBody text-lg">
-            If you want to connect, drop me a message or email me at <a className="text-blue-500 hover:text-blue-300 duration-200" href="mailto:joelsammathew@gmail.com">joelsammathew@gmail.com</a>. I'd love to get in touch.
+            If you want to connect, drop me a message below or email me at <a className="text-blue-500 hover:text-blue-300 duration-200" href="mailto:joelsammathew@gmail.com">joelsammathew@gmail.com</a>. I'd love to get in touch.
           </p>
         </div>
 

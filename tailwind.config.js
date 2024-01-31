@@ -6,7 +6,8 @@ module.exports = {
     fontFamily: {
       signature: ["Rubik Glitch"],
       heading: ["Playfair Display"],
-      textBody: ["Work Sans"]
+      textBody: ["Work Sans"],
+      text1: ["League Spartan"],
     },
   },
   plugins: [],
