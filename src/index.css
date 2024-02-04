@@ -23,6 +23,7 @@
   }
 }
 
+/* Home */
 .intro-text {
   opacity: 0;
   animation: slideInFromBottom 0.5s ease-in-out;
@@ -34,4 +35,18 @@
   animation: slideInFromBottom 0.5s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
+}
+
+/* Art */
+.petal {
+  width: 60px;
+  height: 60px;
+  border-radius: 0 60px 0 60px; 
+}
+
+.leaf {
+  width: 60px;
+  height: 60px;
+  border-radius: 0 60px 0 60px; 
+  background: linear-gradient(45deg, transparent 49%, #53ab56 49%, #2f7031 51%, transparent 51%, transparent);
 }
