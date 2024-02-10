@@ -8,7 +8,8 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const maxScroll =
+        document.documentElement.scrollHeight - window.innerHeight;
       const progress = (scrollPosition / maxScroll) * 100;
       setScrollProgress(progress);
     };
@@ -27,9 +28,12 @@ const NavBar = () => {
   ];
   return (
     <div className="fixed flex-col w-full z-40">
-      <div
-        className="flex justify-between text-white h-20 items-center px-4 bg-gray-950">
-        <div className="font-signature text-5xl ml-2">JM</div>
+      <div className="flex justify-between text-white h-20 items-center px-4 bg-gray-950">
+        <div className="font-signature text-5xl ml-2 cursor-pointer">
+          <Link to="home" smooth duration={500}>
+            JM
+          </Link>
+        </div>
         <ul className="hidden md:flex">
           {links.map(({ id, link }) => (
             <li className="px-4 cursor-pointer capitalize font-medium text-xl text-gray-500 hover:text-orange-100 duration-500">
@@ -62,7 +66,9 @@ const NavBar = () => {
           </ul>
         )}
       </div>
-      <div className="h-0.5 bg-orange-100" style={{ width: `${scrollProgress}%` }}></div>
+      <div
+        className="h-0.5 bg-orange-100"
+        style={{ width: `${scrollProgress}%` }}></div>
     </div>
   );
 };

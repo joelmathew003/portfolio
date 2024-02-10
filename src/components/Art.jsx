@@ -83,7 +83,7 @@ const Art = () => {
         ))}
         {showHelp && (
           <div
-            className={`p-2 bg-gray-700 text-white rounded-md opacity-80 absolute ml-10 w-`}>
+            className={`p-2 bg-gray-700 text-white rounded-md opacity-80 absolute ml-10`}>
             Click to change. Right click to erase
           </div>
         )}
@@ -98,7 +98,7 @@ const Art = () => {
           <div
             onMouseEnter={handleHelpHover}
             onMouseLeave={handleHelpLeave}
-            className="p-1 text-slate-500 rounded-md cursor-pointer">
+            className="p-1 text-slate-500 rounded-md cursor-pointer ">
             <span>[ </span>
             <span className="text-orange-500 text-bold">?</span>
             <span> ]</span>

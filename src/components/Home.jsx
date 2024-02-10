@@ -32,26 +32,29 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col">
-          <div className="w-full md:mt-20">
-            {art ? (
-              <Art />
-            ) : (
-              <img
-                src={Dp}
-                alt="my profile"
-                className="mx-auto md:w-full rounded-3xl p-1"
-              />
-            )}
+
+        <div className="relative">
+          <div className="flex flex-col justify-center items-center">
+            <div className="w-full mx-auto h-96">
+              {art ? (
+                <Art />
+              ) : (
+                <img
+                  src={Dp}
+                  alt="my profile"
+                  className="md:w-full rounded-3xl"
+                />
+              )}
+            </div>
           </div>
-          <span></span>
           <div
-            className="text-gray-400 m-auto cursor-pointer duration-300 text-5xl items-center hover:text-green-200"
+            className="absolute -bottom-14 right-3 text-gray-400 cursor-pointer duration-200 text-5xl hover:text-green-200"
             onClick={switchHandler}
             style={{
-              transform: `rotate(${art ? "-180deg" : "0"})`,
+              transform: `scaleX(${art ? "-1" : "1"})`,
             }}>
-            &#8594;
+            {/* {art ? <span>&#8592;</span> : <span>&#8594;</span>} */}
+            <span>&#8594;</span>
           </div>
         </div>
       </div>

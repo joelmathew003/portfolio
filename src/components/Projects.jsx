@@ -30,7 +30,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      project_name: "Sentiment Analyser",
+      project_name: "Moodio",
       project_desc:
         "Utilized Keras LSTM models and trained on MFCC representations to analyze emotions within audio samples. Crafted a simple web app interface using Streamlit, allowing users to input audio for real-time sentiment predictions and deployed it on Heroku",
       mobile_desc: "An audio sentiment analyser using LSTM with a web app interface",
@@ -40,7 +40,7 @@ const Projects = () => {
     },
     {
       id: 4,
-      project_name: "Android Malware detection using GNN",
+      project_name: "Android Malware detection",
       project_desc:
         "A research-oriented project exploring Android malware detection with Graph Neural Network Models and Explainable AI concepts. Strives for efficient detection with low computation costs.",
       mobile_desc:

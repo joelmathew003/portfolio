@@ -23,6 +23,17 @@
   }
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Home */
 .intro-text {
   opacity: 0;
@@ -38,6 +49,15 @@
 }
 
 /* Art */
+
+.arrow {
+  opacity: 0;
+  animation: slideInFromLeft 0.5s ease-in-out;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
 .petal {
   width: 60px;
   height: 60px;
