@@ -2,7 +2,6 @@ import React from "react";
 import Go from "../assets/tech/go.png";
 import Py from "../assets/tech/python.png";
 import Cpp from "../assets/tech/cpp.png";
-import Sql from "../assets/tech/sql.png";
 import React_img from "../assets/tech/react.png";
 import Linux from "../assets/tech/linux.png";
 import K8s from "../assets/tech/k8s.png";
@@ -15,32 +14,36 @@ import Pytorch from "../assets/tech/pytorch.png";
 
 const Tech = () => {
   const techs = [
-    { id: 1, name: "Go", img_src: Go },
-    { id: 2, name: "Python", img_src: Py },
-    { id: 3, name: "C/C++", img_src: Cpp },
-    { id: 4, name: "SQL", img_src: Sql },
-    { id: 5, name: "React", img_src: React_img },
-    { id: 6, name: "Linux", img_src: Linux },
-    { id: 7, name: "K8s", img_src: K8s },
-    { id: 8, name: "Docker", img_src: Docker },
-    { id: 9, name: "Postgres", img_src: Postgres },
-    { id: 10, name: "Azure Pipelines", img_src: Azure },
-    { id: 11, name: "Tailwind", img_src: Tailwind },
-    { id: 12, name: "Keras", img_src: Tf },
-    { id: 13, name: "Pytorch", img_src: Pytorch },
+    { name: "Go", img_src: Go },
+    { name: "Python", img_src: Py },
+    { name: "C/C++", img_src: Cpp },
+    { name: "React", img_src: React_img },
+    { name: "Tailwind", img_src: Tailwind },
+    { name: "Postgres", img_src: Postgres },
+    { name: "Linux", img_src: Linux },
+    { name: "K8s", img_src: K8s },
+    { name: "Docker", img_src: Docker },
+    { name: "Azure Pipelines", img_src: Azure },
+    { name: "Keras", img_src: Tf },
+    { name: "Pytorch", img_src: Pytorch },
   ];
   return (
-    <div className="text-white h-full w-full md:px-40 px-10">
+    <div className="text-white h-full w-full md:pr-40 px-10 md:mt-64">
       <div className="flex flex-col p-4 justify-center w-full  lg mx-auto h-full">
         <div className="">
-          <p className="py-4 text-xl text-gray-400">I have tinkered with stuff like</p>
+          <p className="py-4 text-xl text-gray-400 font-textBody ">
+            I have tinkered with tech like
+          </p>
         </div>
         <div>
-          <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 md:px-12 sm:px-0">
+          <div className="w-full grid grid-cols-4 sm:grid-cols-5 gap-4 text-center sm:px-0">
             {techs.map(({ id, name, img_src }) => (
-              <div className="flex justify-normal items-center p-2 rounded-md bg-slate-800 hover:bg-slate-700 transition-all duration-200">
-                <img className="h-12 pr-4 w-30" src={img_src} alt=""></img>
-                <p>{name}</p>
+              <div className="items-center p-2 rounded-md hover:bg-slate-700 duration-200">
+                <img
+                  className="h-12 m-auto"
+                  src={img_src}
+                  alt=""
+                  title={name}></img>
               </div>
             ))}
           </div>

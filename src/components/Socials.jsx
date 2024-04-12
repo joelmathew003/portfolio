@@ -14,7 +14,7 @@ const Socials = () => {
           <FaLinkedin size={20} />
         </>
       ),
-      href: "http://www.linkedin.com",
+      href: "https://www.linkedin.com/in/joel-mathew-3122751a6/",
       style: "rounded-tr-md",
     },
     {
@@ -26,7 +26,7 @@ const Socials = () => {
           <FaGithub size={20} />
         </>
       ),
-      href: "http://www.github.com",
+      href: "https://github.com/joelmathew003",
     },
     {
       id: 3,
@@ -38,7 +38,6 @@ const Socials = () => {
         </>
       ),
       href: "mailto:joelsammathew@gmail.com",
-      style: "rounded-br-md",
     },
     {
       id: 4,
@@ -48,19 +47,19 @@ const Socials = () => {
           <BsFillPersonLinesFill size={20} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "/Joel_Mathew_Resume_2024.pdf",
       style: "rounded-br-md",
       download: true,
     },
   ];
   return (
-    <div className="hidden lg:flex fixed bg-gray-500 text-white left-0 top-[35%] rounded-lg">
+    <div className="hidden lg:flex fixed bg-gray-700 text-white left-0 top-[35%] rounded-lg">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-110px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-110px] hover:ml-[-10px] hover:rounded-md duration-500 bg-gray-700" +
               " " +
               style
             }>

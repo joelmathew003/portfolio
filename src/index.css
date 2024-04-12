@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,11 +12,61 @@
   }
 }
 
-/* body {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-  background-color: #000000;
-  background-color: #000000;
-  background-color: #1f2937;
-  min-height: 100vh;
-  background-attachment: fixed;
-} */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Home */
+.intro-text {
+  opacity: 0;
+  animation: slideInFromBottom 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.intro-text-2 {
+  opacity: 0;
+  animation: slideInFromBottom 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+/* Art */
+
+.arrow {
+  opacity: 0;
+  animation: slideInFromLeft 0.5s ease-in-out;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+.petal {
+  width: 60px;
+  height: 60px;
+  border-radius: 0 60px 0 60px; 
+}
+
+.leaf {
+  width: 60px;
+  height: 60px;
+  border-radius: 0 60px 0 60px; 
+  background: linear-gradient(45deg, transparent 49%, #53ab56 49%, #2f7031 51%, transparent 51%, transparent);
+}

@@ -8,12 +8,14 @@ import Tech from "./components/Tech";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-black via-black to-gray-800 bg-fixed">
+    <div className="h-full bg-gray-900 bg-fixed">
       <NavBar />
       <Socials />
       <Home />
-      <About />
-      <Tech />
+      <div className="md:flex">
+        <About />
+        <Tech />
+      </div>
       <Projects />
       <Contact />
     </div>
