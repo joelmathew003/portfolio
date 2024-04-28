@@ -20,7 +20,7 @@ const Home = () => {
               I'm Joel
             </h2>
           </div>
-          <div className="text-gray-400 text-xl delay-700 tracking-widest h-8 font-textBody">
+          <div className="text-gray-400 text-xl delay-700 tracking-widest h-8 font-textTypeWriter">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
