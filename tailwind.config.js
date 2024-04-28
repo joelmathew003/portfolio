@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      signature: ["Rubik Glitch"],
+      signature: ["Marcellus"],
       heading: ["Playfair Display"],
-      textBody: ["Work Sans"],
+      textTypeWriter: ["Marcellus"],
+      textBody: ["Marcellus"],
       text1: ["League Spartan"],
     },
   },

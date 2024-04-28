@@ -32,7 +32,7 @@ const Projects = () => {
       id: 3,
       project_name: "Moodio",
       project_desc:
-        "Utilized Keras LSTM models and trained on MFCC representations to analyze emotions within audio samples. Crafted a simple web app interface using Streamlit, allowing users to input audio for real-time sentiment predictions and deployed it on Heroku",
+        "Utilized Keras LSTM models trained on MFCC representations to analyze emotions in audio. Created a web app with Streamlit for real-time sentiment predictions, deployed on Heroku.",
       mobile_desc: "An audio sentiment analyser using LSTM with a web app interface",
       img_src: Sentiment,
       github_link: "https://github.com/joelmathew003/Sentiment-Analysis",
