@@ -13,8 +13,8 @@ const About = () => {
         </div>
         <div className="flex flex-col justify-normal gap-8">
           <p className="mt-20 text-xl text-gray-400 font-textBody">
-            I'm a passionate developer with an interest in networking and
-            cybersecurity domains. I enjoy problem solving and crafting clean
+            I'm a passionate developer with an interest in cybersecurity 
+            and AI domains. I enjoy problem solving and crafting clean
             and elegant solutions.
           </p>
           <p className="text-xl text-gray-400 font-textBody">
